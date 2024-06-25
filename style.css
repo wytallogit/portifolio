@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primaria: rgba(43, 9, 69, 1);
+    --secundaria: rgba(68, 40, 91, 1);
+    --branco: rgba(255, 250, 255, 1);
+    --amarelo: rgba(238, 213, 114, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nome-amarelo {
+    color: var(--amarelo);
+}
+body {
+    background-color: var(--primaria);
+    color: var(--branco);
+    font-family: "Poppins";
+}
+
+/*cabeçalho*/
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--primaria);
+}
+
+header h1, #menu {
+    margin: 30px;
+}
+
+header, #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 70px;
+}
+
+li {
+    display: inline;
+}
+
+nav a, a:visited {
+    color: var(--branco);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--amarelo);
+    color: var(--primaria);
+}
+
+
+
+/*conteudo da pagina e algumas configurações gerais*/
+
+
+#primeira-parte, #segunda-parte, #terceira-parte, #quarta-parte {
+    height: 730px;
+}
+
+
+
+/*primeira parte*/
+
+#primeira-parte{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#primeira-parte h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+#primeira-parte h3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+#primeira-parte h2, #primeira-parte h3 {
+    line-height: 1.2em;
+}
+
+button {
+    background-color: var(--primaria);
+    border: 2px solid var(--amarelo);
+    color: var(--amarelo);
+    padding: 13px;
+    border-radius: 20px;
+    width: 180px;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-right: 1%;
+}
+
+button:hover {
+    background-color: var(--amarelo);
+    color: var(--primaria);
+}
+
+
+
+#meu-nome {
+    width: 60%;
+    margin-left: 30px;
+}
+
+/*inicio da segunda parte*/
+
+#segunda-parte {
+    background-color: var(--secundaria);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sobre-mim {
+    margin: auto auto;
+    width: 55%;
+    text-align: center;
+    text-align: justify;
+    font-size: 1em;
+}
+
+#sobre-mim h2 {
+    font-size: 3em;
+}
+
+#segunda-parte picture {
+    margin: auto auto;
+    text-align: center;
+}
+
+#segunda-parte img {
+    width: 59%;
+}
+
+/*terceira parte*/
+
+#terceira-parte {
+    text-align: center;
+}
+
+#terceira-parte h2 {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+#caixa-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.projetos {
+    background-color: var(--secundaria);
+    width: 325px;
+    margin: auto;
+}
+
+
+/*quarta parte*/
+
+#quarta-parte {
+    background-color: var(--secundaria);
+    display: flex;
+}
+
+#quarta-parte picture {
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+
+#quarta-parte img {
+    width: 100%;
+}
+
+#about-me {
+    margin: auto;
+    text-align: center;
+    width: 500px;
+}
+
+#about-me h5 {
+    font-size: 2.5em;
+}
+
+#ellipse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#ellipse img {
+    margin: 10px;
+    width: 100px;
+}
+
+
+/*quinta parte*/
+
+#quinta-parte h2 {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#quinta-parte picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#quinta-parte img {
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#quinta-parte img::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, black, blue);
+    pointer-events: none;
+
+}
+
+
+
+/*sexta parte*/
+#sexta-parte {
+    background-color: var(--secundaria);
+    text-align: center;
+}
