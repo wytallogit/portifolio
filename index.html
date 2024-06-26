@@ -9,21 +9,16 @@
 <body>
     <header> <!--inicio cabeçalho-->
         <h1 class="cabecalho">Witalo <span class="nome-amarelo">VINICIUS DA SILVA</span></h1>
-        <div id="menu">
-            <nav>
-                <ul class="cabecalho">
-                    <li><a href="#primeira-parte">Principal</a></li>
-                    <li><a href="#segunda-parte">Sobre mim</a></li>
-                    <li><a href="#terceira-parte">Serviços</a></li>
-                    <li><a href="#quarta-parte">Habilidades</a></li>
-                    <li><a href="#quinta-parte">Projetos</a></li>
-                    <li><a href="#sexta-parte">Contato</a></li>
-                </ul>
-            </nav>
-            <picture class="cabecalho">
-                <a href="#"><img src="imagens/eua.png" alt=""></a>
-            </picture>
-        </div>
+        <nav>
+            <ul class="cabecalho">
+                <li><a href="#primeira-parte">Principal</a></li>
+                <li><a href="#segunda-parte">Sobre mim</a></li>
+                <li><a href="#terceira-parte">Serviços</a></li>
+                <li><a href="#quarta-parte">Habilidades</a></li>
+                <li><a href="#quinta-parte">Projetos</a></li>
+                <li><a href="#sexta-parte">Contato</a></li>
+            </ul>
+        </nav>
     </header> <!--fim cabeçalho-->
 
     <main>
@@ -38,7 +33,10 @@
                 </div>
             </div>
             <picture>
-                <img src="imagens/avatar.png" width="600px">
+                <source media="(min-width: 1921px)" srcset="imagens/grande.png">
+                <source media="(max-width: 1920px)" srcset="imagens/media.png">
+                <source media="(max-width: 400px)" srcset="imagens/pequena.png">
+                <img src="imagens/media.png" alt="">
             </picture>
         </div>
         <div id="segunda-parte"> <!--inicio da segunda parte do conteudo-->
