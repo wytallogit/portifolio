@@ -228,22 +228,43 @@ button:hover {
 #quinta-parte img {
     margin: 10px;
     border-radius: 10px;
-    position: relative;
 }
 
 #quinta-parte img::after {
     width: 100%;
     height: 100%;
-    position: absolute;
-    background-image: linear-gradient(to bottom, black, blue);
-    pointer-events: none;
-
 }
 
 
 
 /*sexta parte*/
 #sexta-parte {
+    height: 450px;
     background-color: var(--secundaria);
     text-align: center;
+}
+
+#sexta-parte h2 {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    font-size: 3em;
+}
+
+#me-contate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contatos {
+    width: 300px;
+}
+
+/*rodapé*/
+
+footer {
+    background-color: var(--primaria);
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
 }
